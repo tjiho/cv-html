@@ -1,0 +1,162 @@
+html {
+    background-color:grey;
+}
+
+body {
+    font-size: 11pt;
+    font-family: 'Merriweather', serif;
+    --main-title-color: #3d58b9;
+}
+
+
+
+main
+{
+    width: 21cm;
+    height: 29.7cm;
+    box-sizing: border-box;
+    /* to centre page on screen*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+}
+
+section
+{
+    width: 70%;
+    padding-top: 0.7cm;
+    padding-left: 0.7cm;
+    padding-right: 0.1cm;
+    box-sizing: border-box;
+}
+
+aside
+{
+    width: 30%;
+    background-color: #eee;
+    padding-top: 0.7cm;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+h1, h2, h3 {
+    margin: 0;
+
+}
+
+h3
+{
+    padding: 10px 2px 5px 0px;
+}
+
+h2
+{
+    color:var(--main-title-color);
+    padding-top: 10px;
+    margin-bottom: 0.2cm;
+}
+
+h1
+{
+    padding-bottom: 3px;
+}
+
+h1 .nom
+{
+    color:var(--main-title-color);
+    font-size: 2em;
+}
+
+
+/*******************************************************/
+
+.line
+{
+    display: flex;
+    margin-bottom: 0.2cm;
+}
+
+.line > .date
+{
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0.1cm;
+    order: 2;
+    /*text-align: right;
+    border-left: 2px solid var(--main-title-color);
+    align-self: flex-start;*/
+}
+
+.line > .date::before
+{
+    content: "";
+    display:block;
+    width: ;
+    border-top: 2px solid var(--main-title-color);
+
+}
+
+.line > .info
+{
+    order: 1;
+    flex:1;
+}
+
+.line > .info > .title
+{
+    padding-bottom: 0.1cm;
+}
+
+.line .title > .ecole
+{
+    font-weight: 800;
+}
+
+.line .description
+{
+    font-style: italic;
+}
+
+/**************************************************************/
+
+#img
+{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 50px;
+    margin-bottom: 0.5cm;
+    
+}
+
+#infos-perso ul
+{
+    
+    list-style-type: none;
+}
+
+.fa-lg
+{
+    padding-right: 0.1cm;
+    padding-bottom: 0.1cm;
+    width: 1em;
+}
+
+strong
+{
+    color: var(--main-title-color);
+    font-weight: 100;
+    text-decoration: underline;
+
+}
