@@ -76,7 +76,7 @@ h2
 
 h1
 {
-    padding-bottom: 0.8cm;
+    padding-bottom: 0.3cm;
 }
 
 h1 .nom
@@ -171,8 +171,13 @@ strong
 {
     color: black;
     font-weight: 100;
-    text-decoration: underline;
+    text-decoration: none;
 
+}
+
+a
+{
+	color: inherit;
 }
 
 @media print {
