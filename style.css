@@ -6,6 +6,7 @@ body {
     font-size: 10pt;
     font-family: 'Merriweather', serif;
     --main-title-color: #3d58b9;
+    /* --main-title-color: #169982; */
     color: #4b4b4b;
     margin: 0;
 }
@@ -34,8 +35,8 @@ section
 {
     width: 70%;
     padding-top: 0.7cm;
-    padding-left: 0.7cm;
-    padding-right: 0.1cm;
+    padding-left: 0.1cm;
+    padding-right: 0.7cm;
     box-sizing: border-box;
 }
 
@@ -43,10 +44,20 @@ aside
 {
     width: 30%;
     background-color: #eee;
-    padding-top: 0.7cm;
-    padding-left: 0.5cm;
-    padding-right: 0.5cm;
+    /* background-color: #FEEFE7;
+    background-color: #E3F3F0; */
+
     color: #444;
+    border-radius: 14px;
+    /* box-shadow: -11px -11px 22px #c1cfcc, 11px 11px 22px #ffffff; */
+    margin: 2.5%;
+    overflow: hidden;
+}
+
+.aside-content {
+  padding-top: 0.4cm;
+  padding-left: 0.4cm;
+  padding-right: 0.4cm;
 }
 
 ul {
@@ -76,18 +87,37 @@ h2
 
 h1
 {
-    padding-bottom: 0.3cm;
+    /* padding-bottom: 0.3cm; */
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    color: white;
+      padding-top: 1cm;
+
+}
+
+h1::before{
+    content: "";
+    transform: skewY(-11deg);
+    background-color:var(--main-title-color);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:-1.5cm;
+    left: 0;
+    z-index: -1;
+
 }
 
 h1 .nom
 {
-    color:var(--main-title-color);
+    /* color:var(--main-title-color); */
     font-size: 2em;
 }
 
 h1 .title
 {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 
@@ -103,8 +133,9 @@ h1 .title
 {
     width: 20%;
     box-sizing: border-box;
-    padding: 0.1cm;
+    padding-left: 0.1cm;
     order: 2;
+    position: relative;
     /*text-align: right;
     border-left: 2px solid var(--main-title-color);
     align-self: flex-start;*/
@@ -114,8 +145,10 @@ h1 .title
 {
     content: "";
     display:block;
-    width: ;
+    width: 100%;
     border-top: 2px solid var(--main-title-color);
+    position: absolute;
+    top:-2px;
 
 }
 
@@ -147,16 +180,17 @@ h1 .title
 {
     height: 100px;
     width: 100px;
-    border: 1px solid black;
+    border: 8px solid #fff;
     margin: auto;
-    border-radius: 50px;
-    margin-bottom: 0.5cm;
-    
+    border-radius: 100px;
+    margin-top: 0.5cm;
+    /* box-shadow: 20px 20px 60px #d8cbc4, -20px -20px 60px #ffffff; */
+
 }
 
 #infos-perso ul
 {
-    
+
     list-style-type: none;
 }
 
@@ -185,7 +219,7 @@ a
 	padding-bottom: 4px;
 }
 
-@media print {
+/* @media print {
     aside
     {
     width: 30%;
@@ -195,4 +229,4 @@ a
     padding-right: 0.5cm;
     color: #444;
     }
-}
+} */
