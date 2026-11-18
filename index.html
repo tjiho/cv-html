@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.5/css/fork-awesome.min.css" integrity="sha256-P64qV9gULPHiZTdrS1nM59toStkgjM0dsf5mK/UwBV4=" crossorigin="anonymous">    <style>
+<link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.5/css/fork-awesome.min.css" integrity="sha256-P64qV9gULPHiZTdrS1nM59toStkgjM0dsf5mK/UwBV4=" crossorigin="anonymous">    <style>
 
     </style>
   </head>
@@ -13,7 +13,7 @@
       <aside>
         <h1>
           <div class="nom">Tom Darboux</div>
-          <div class="title">Ingénieur R&D logiciel <br/> <span class="title__desc">Web, Linux et IA<span></div>
+          <div class="title">Ingénieur R&D logiciel <br/> <span class="title__desc">Web, Linux et IA</span></div>
           <div id="img"></div>
         </h1>
         <div class="aside-content">
@@ -86,24 +86,22 @@
             <h2>Expériences</h2>
 
             <div class="line">
-              <span class="date">Depuis 2022</span>
               <div class="info">
-                <div class="title"><span class="ecole">Ingénieur R&D, Linagora (LinTO Studio)</span>, Toulouse</div>
+                <div class="title"><span class="date">Depuis 2022</span><span class="ecole">Ingénieur R&D, Linagora (LinTO Studio)</span>, Toulouse</div>
                 <div class="description">
+                  <div class="context">Solution open-source de transcription et de compte rendu de réunions par IA, en direct et en différé. Offre SaaS et déploiements chez des grands comptes.</div>
                   <ul>
-                    <li>Développement front-end pour une solution d'Intelligence Artificielle vocale open-source afin d'automatiser les comptes rendus de réunion en <strong>VueJS</strong>.</li>
-                    <li>Développement d'un éditeur collaboratif de transcription grâce à <strong>Yjs</strong> et des <strong>WebSockets</strong></li>
-                    <li>Prototypage avec <strong>Figma</strong>.</li>
-                    <li>Développement d'une application compagnon en <strong>Flutter</strong>.</li>
+                    <li>Conception et développement du composant central d'affichage des transcriptions (<strong>VueJS</strong>, <strong>WebSockets</strong>) : suivi en direct par plusieurs centaines de spectateurs simultanés, édition collaborative, résumés, mode karaoké, gestion des locuteurs, chat.</li>
+                    <li>Refonte de linto-stt (<strong>Python</strong>), le service d'inférence des modèles de reconnaissance vocale (<strong>Kaldi</strong> sur CPU, <strong>Whisper</strong> sur GPU) : passage à <strong>uv</strong> et architecture modulaire, fonctionnement possible hors Docker.</li>
+                    <li>Développement de la version PWA de l'application, assisté par IA générative.</li>
                   </ul>
                 </div>
               </div>
             </div>
 
             <div class="line">
-              <div class="date">2019 – 2022</div>
               <div class="info">
-                <div class="title"><span class="ecole">Designeur interface utilisateur (UI) et ingénieur front-end à Sierra Wireless pour Octave</span>, Labège</div>
+                <div class="title"><span class="date">2019 – 2022</span><span class="ecole">Designeur interface utilisateur (UI) et ingénieur front-end à Sierra Wireless pour Octave</span>, Labège</div>
                 <div class="description">
                   <ul>
                     <li>Développement front-end pour une solution IoT edge to cloud en <strong>ReactJS</strong> avec Recompose.</li>
@@ -114,9 +112,8 @@
             </div>
 
             <div class="line">
-              <div class="date">2019</div>
               <div class="info">
-                <div class="title"><span class="ecole">Stage de fin d'étude à Sigfox</span>, Labège</div>
+                <div class="title"><span class="date">2019</span><span class="ecole">Stage de fin d'étude à Sigfox</span>, Labège</div>
 
                 <div class="description">
                   <ul>
@@ -127,17 +124,15 @@
             </div>
 
             <!-- <div class="line">
-              <div class="date">2018 – 2019</div>
               <div class="info">
-                <div class="title"><span class="ecole">Alternance assistant DOSI de l'EISTI</span>, Pau.</div>
+                <div class="title"><span class="date">2018 – 2019</span><span class="ecole">Alternance assistant DOSI de l'EISTI</span>, Pau.</div>
                 <div class="description">Déploiement automatisé et administration système.</div>
               </div>
             </div> -->
 
             <!-- <div class="line">
-                <div class="date">2018</div>
                 <div class="info">
-                  <div class="title"><span class="ecole">Projet IoT</span>, Danemark.</div>
+                  <div class="title"><span class="date">2018</span><span class="ecole">Projet IoT</span>, Danemark.</div>
                   <div class="description">
                     <div>
                       <div>Surveillance d'activité et détection incendies, avec une Lopy, <strong>LoRaWAN</strong>, et des <strong>Bluetooth beacons.</strong></div>
@@ -148,9 +143,8 @@
             </div> -->
 
             <!-- <div class="line">
-              <div class="date">2017</div>
               <div class="info">
-                <div class="title"><span class="ecole">Stage à COSOLUCE</span>, Pau.</div>
+                <div class="title"><span class="date">2017</span><span class="ecole">Stage à COSOLUCE</span>, Pau.</div>
                 <div class="description">
                     <div>
                         <div>Développement d’un portail web et d'applications mobile pour les administrés d’une collectivité.</div>
@@ -164,9 +158,8 @@
             <h2>Associatif et projets personnels</h2>
 
             <div class="line">
-              <div class="date">Depuis 2018</div>
               <div class="info">
-                <div class="title"><span class="ecole">Administrateur système de <a href="https://fede.re"/> fede.re</a></span></div>
+                <div class="title"><span class="date">Depuis 2018</span><span class="ecole">Administrateur système de <a href="https://fede.re"/> fede.re</a></span></div>
                 <div class="description">
                   <ul>
                     <li>Administration de deux serveurs Linux sous <strong>Fedora</strong>.</li>
@@ -177,9 +170,8 @@
               </div>
             </div>
             <div class="line">
-              <div class="date">2023</div>
               <div class="info">
-                <div class="title"><span class="ecole">Entrainement d'une voix synthétique grace à Piper/Vits</span></div>
+                <div class="title"><span class="date">2023</span><span class="ecole">Entrainement d'une voix synthétique grace à Piper/Vits</span></div>
                 <div class="description">
                   <ul>
                     <li>Enregistrement et traitement d'un dataset oral.</li>
@@ -190,9 +182,8 @@
             </div>
 
             <div class="line">
-              <div class="date">Depuis 2020</div>
               <div class="info">
-                <div class="title"><span class="ecole">Reconnaissance vocale basée sur le projet Rhasspy</span></div>
+                <div class="title"><span class="date">Depuis 2020</span><span class="ecole">Reconnaissance vocale basée sur le projet Rhasspy</span></div>
                 <div class="description">
                   <ul>
                     <li>Commande vocal pour la domotique de mon appartement avec une Raspberry pi.</li>
@@ -205,9 +196,8 @@
             </div>
 
             <div class="line">
-                <div class="date">2017 – 2018</div>
                 <div class="info">
-                  <div class="title"><span class="ecole">Vice-trésorier et développeur Air-Eisti</span></div>
+                  <div class="title"><span class="date">2017 – 2018</span><span class="ecole">Vice-trésorier et développeur Air-Eisti</span></div>
                   <div class="description">
                     <ul>
                       <li>Organisation de tournois de jeux vidéo.</li>
@@ -222,9 +212,8 @@
             <h2>Formations</h2>
 
             <div class="line">
-              <div class="date">2014 – 2019</div>
               <div class="info">
-                <div class="title"><span class="ecole">EISTI, CY Tech</span> - École internationale des sciences du traitement de l'information, Pau</div>
+                <div class="title"><span class="date">2014 – 2019</span><span class="ecole">EISTI, CY Tech</span> - École internationale des sciences du traitement de l'information, Pau</div>
                 <div class="description">
                   <ul>
                     <li>Cycle ingénieur, spécialité Ingénierie du Cloud Computing.</li>
@@ -234,9 +223,8 @@
             </div>
 
             <div class="line">
-              <div class="date">2018</div>
               <div class="info">
-                <div class="title"><span class="ecole">SDU</span> - University of Southern Denmark, Odense</div>
+                <div class="title"><span class="date">2018</span><span class="ecole">SDU</span> - University of Southern Denmark, Odense</div>
                 <div class="description">
                   <ul>
                     <li>Master in software engineering, major IoT, minor IA.</li>
@@ -246,9 +234,8 @@
             </div>
 
             <div class="line">
-              <div class="date">2016 – 2017</div>
               <div class="info">
-                <div class="title" style="white-space: nowrap;"><span class="ecole">PAULLA</span> - Pau logiciel libre association, JP Camguillem</div>
+                <div class="title" style="white-space: nowrap;"><span class="date">2016 – 2017</span><span class="ecole">PAULLA</span> - Pau logiciel libre association, JP Camguillem</div>
                 <div class="description">
                   <ul>
                     <li>Formation Python.</li>
@@ -258,9 +245,8 @@
             </div>
 
             <div class="line">
-              <div class="date">2014</div>
               <div class="info">
-                <div class="title"><span class="ecole">Bac S</span> - Mention assez bien, Toulouse</div>
+                <div class="title"><span class="date">2014</span><span class="ecole">Bac S</span> - Mention assez bien, Toulouse</div>
                 <div class="description">
                   <ul>
                     <li>Science de l'ingénieur spécialité ISN.</li>
@@ -270,9 +256,8 @@
             </div>
             <!--
             <div class="line">
-              <div class="date">2017 - 2018</div>
               <div class="info">
-                <div class="title"><span class="ecole">Hades</span></div>
+                <div class="title"><span class="date">2017 - 2018</span><span class="ecole">Hades</span></div>
                 <div class="description">
                   <div>
                     <div>Application web de gestion de tournois <strong>NodeJS</strong> avec Express, et <strong>Angular 6</strong>.</div>

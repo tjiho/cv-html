@@ -4,7 +4,7 @@ html {
 
 body {
     font-size: 10pt;
-    font-family: 'Merriweather', serif;
+    font-family: 'Tinos', serif;
     --main-title-color: #3d58b9;
     /* --main-title-color: #169982; */
     color: #4b4b4b;
@@ -142,33 +142,26 @@ h1 .title
     margin-bottom: 0px;
 }
 
-.line > .date
+.line .title > .date
 {
-    width: 20%;
-    box-sizing: border-box;
-    padding-left: 0.1cm;
-    order: 2;
-    position: relative;
-    /*text-align: right;
-    border-left: 2px solid var(--main-title-color);
-    align-self: flex-start;*/
+    color: var(--main-title-color);
+    font-weight: 800;
+    white-space: nowrap;
 }
 
-.line > .date::before
+.line .title > .date::after
 {
-    content: "";
-    display:block;
-    width: 100%;
-    border-top: 2px solid var(--main-title-color);
-    position: absolute;
-    top:-2px;
-
+    content: "\00a0: ";
 }
 
 .line > .info
 {
-    order: 1;
     flex:1;
+}
+
+.line .description > .context
+{
+    padding-bottom: 0.1cm;
 }
 
 .line > .info > .title
@@ -182,7 +175,7 @@ h1 .title
     color:black;
 }
 
-.line .description
+.line .description > .context
 {
     font-style: italic;
 }
