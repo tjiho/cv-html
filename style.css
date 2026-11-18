@@ -57,7 +57,7 @@ aside
 .aside-content {
   padding-top: 0.4cm;
   padding-left: 0.4cm;
-  /* padding-right: 0.4cm; */
+  padding-right: 0.25cm;
 }
 
 ul {
@@ -145,7 +145,7 @@ h1 .title
 .line .title > .date
 {
     color: var(--main-title-color);
-    font-weight: 800;
+    font-weight: 700;
     white-space: nowrap;
 }
 
@@ -171,7 +171,7 @@ h1 .title
 
 .line .title > .ecole
 {
-    font-weight: 800;
+    font-weight: 700;
     color:black;
 }
 
@@ -204,7 +204,8 @@ h1 .title
 {
     padding-right: 0.1cm;
     padding-bottom: 0.1cm;
-    width: 1em;
+    width: 1.25em;
+    text-align: center;
 }
 
 strong
@@ -236,3 +237,10 @@ a
     color: #444;
     }
 } */
+
+/* Variante sans photo : retirer la classe "no-photo" de <main> pour remettre la photo */
+.no-photo #img { display: none; }
+.no-photo h1 { padding-top: 1.7cm; padding-bottom: 2.1cm; }
+.no-photo h1::before { height: calc(100% + 0.8cm); border-bottom: 8px solid #fff; }
+.no-photo h1 .title { margin-top: 0.2cm; }
+.no-photo .aside-content h2 { padding-top: 0.6cm; }
