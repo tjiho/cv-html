@@ -5,8 +5,8 @@ html {
 body {
     font-size: 10pt;
     font-family: 'Tinos', serif;
-    --main-title-color: #3d58b9;
-    /* --main-title-color: #169982; */
+    --main-title-color: #2f7d4f;
+    /* --main-title-color: #3d58b9; */
     color: #4b4b4b;
     margin: 0;
 }
@@ -43,7 +43,7 @@ section
 aside
 {
     width: 30%;
-    background-color: #eee;
+    background-color: #eef4f0;
     /* background-color: #FEEFE7;
     background-color: #E3F3F0; */
 
@@ -244,3 +244,19 @@ a
 .no-photo h1::before { height: calc(100% + 0.8cm); border-bottom: 8px solid #fff; }
 .no-photo h1 .title { margin-top: 0.2cm; }
 .no-photo .aside-content h2 { padding-top: 0.6cm; }
+
+/* Tirets avec retrait suspendu */
+section ul
+{
+    list-style: none;
+    padding-left: 1em;
+}
+
+section li::before
+{
+    content: "–";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    color: var(--main-title-color);
+}
