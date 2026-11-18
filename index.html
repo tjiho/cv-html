@@ -13,14 +13,14 @@
       <aside>
         <h1>
           <div class="nom">Tom Darboux</div>
-          <div class="title">Ingénieur R&D logiciel <br/> <span class="title__desc">Web, Linux et IA</span></div>
+          <div class="title">Ingénieur R&D logiciel</div>
           <div id="img"></div>
         </h1>
         <div class="aside-content">
 
           <div id="infos-perso">
             <div>
-              <div><i class="fa fa-user fa-lg"></i>28 ans – permis B</div>
+              <div><i class="fa fa-car fa-lg"></i>Permis B</div>
               <div><i class="fa fa-phone fa-lg"></i>06.32.77.85.06</div>
               <div><i class="fa fa-envelope fa-lg"></i><a href="mailto:tjiho@ppsfleet.navy"/>tjiho@ppsfleet.navy</a></div>
               <div><i class="fa fa-github fa-lg"></i><a href="https://github.com/Tjiho"/>https://github.com/Tjiho</a></div>
@@ -30,17 +30,17 @@
 
           <h2>Compétences</h2>
 
-          <h3>Développement UI et UX </h3>
-          <div>VueJS, ReactJS, Figma, CSS, Gimp, Inkscape</div>
+          <h3>Développement UI et UX</h3>
+          <div>VueJS, ReactJS, CSS, Figma, Gimp, Inkscape</div>
 
           <h3>Développement backend</h3>
           <div>Python dont Django, NodeJS, PHP</div>
 
           <h3>Administration système</h3>
-          <div>Git, Docker, commandes Unix, Nginx, Vim, notions de réseaux, notions de SELinux, MQTT </div>
+          <div>Linux (Fedora), Bash, Vim, Docker, Nginx, Git, SELinux, MQTT</div>
 
-          <h3>Notions de machine learning</h3>
-          <div><div></div></div>
+          <h3>Machine learning (notions)</h3>
+          <div>Intégration de modèles STT, entraînement de modèles TTS</div>
           <!-- <h3>Principaux langages</h3>
           <div>
             <div class="langages"><strong class="mot-cle">Javascript</strong> : NodeJS, Express, VueJS, ReactJS, Recompose</div>
@@ -74,10 +74,7 @@
 
           <h2>Intérêts</h2>
           <div>
-            <div>Vélo, Dessin, </div>
-            <div>Photographie, Cuisine, </div>
-            <div>Domotique (HASS, Rhasspy), </div>
-            <div>Écologie, Logiciel libre.</div>
+            <div>Vélo, dessin, photographie, cuisine, domotique (HASS, Rhasspy), écologie, logiciel libre.</div>
           </div>
         </div>
       </aside>
@@ -89,7 +86,7 @@
               <div class="info">
                 <div class="title"><span class="date">Depuis 2022</span><span class="ecole">Ingénieur R&D, Linagora (LinTO Studio)</span>, Toulouse</div>
                 <div class="description">
-                  <div class="context">Solution open-source de transcription et de compte rendu de réunions par IA, en direct et en différé. Offre SaaS (plus de 2 500 inscrits) et déploiements chez des grands comptes.</div>
+                  <div class="context">Solution open-source de transcription et de compte rendu de réunions par IA, en direct et en différé. Offre SaaS et déploiements chez des grands comptes.</div>
                   <ul>
                     <li>Conception et développement du composant central d'affichage des transcriptions (<strong>VueJS</strong>, <strong>WebSockets</strong>) : suivi en direct par plusieurs centaines de spectateurs simultanés, édition collaborative, résumés, mode karaoké, gestion des locuteurs, chat.</li>
                     <li>Refonte de linto-stt (<strong>Python</strong>), le service d'inférence des modèles de reconnaissance vocale (<strong>Kaldi</strong> sur CPU, <strong>Whisper</strong> sur GPU) : passage à <strong>uv</strong> et architecture modulaire, fonctionnement possible hors Docker.</li>
@@ -101,11 +98,12 @@
 
             <div class="line">
               <div class="info">
-                <div class="title"><span class="date">2019 – 2022</span><span class="ecole">Designer d'interface utilisateur (UI) et ingénieur front-end à Sierra Wireless pour Octave</span>, Labège</div>
+                <div class="title"><span class="date">2019 – 2022</span><span class="ecole">Designer UI et ingénieur front-end, Sierra Wireless (Octave)</span>, Labège</div>
                 <div class="description">
+                  <div class="context">Plateforme IoT edge-to-cloud pour connecter et piloter des équipements industriels.</div>
                   <ul>
-                    <li>Développement front-end pour une solution IoT edge-to-cloud en <strong>ReactJS</strong> avec Recompose.</li>
-                    <li>Prototypage avec <strong>Figma</strong>.</li>
+                    <li>Développement front-end de l'interface web en <strong>ReactJS</strong> (Recompose).</li>
+                    <li>Conception et prototypage des interfaces sous <strong>Figma</strong>.</li>
                   </ul>
                 </div>
               </div>
@@ -159,23 +157,27 @@
 
             <div class="line">
               <div class="info">
-                <div class="title"><span class="date">Depuis 2018</span><span class="ecole">Administrateur système de <a href="https://fede.re"/> fede.re</a></span></div>
+                <div class="title"><span class="date">Depuis 2018</span><span class="ecole">Administrateur système, <a href="https://fede.re">fede.re</a></span></div>
                 <div class="description">
+                  <div class="context">Collectif bénévole d'hébergement de services libres, dans l'esprit des CHATONS.</div>
                   <ul>
-                    <li>Administration de deux serveurs Linux sous <strong>Fedora</strong>.</li>
-                    <li>Installation et maintenance d'un service de tuiles <strong>OpenStreetMap</strong>, un serveur <strong>IMAP et SMTP</strong>.</li>
-                    <li>Maintenance de divers services et sites web auto-hébergés (Nextcloud, PeerTube, etc.).</li>
+                    <li>Administration de serveurs <strong>Fedora</strong> et <strong>FreeBSD</strong> : <strong>Podman</strong>, <strong>systemd</strong>, <strong>SELinux</strong>, pare-feu, montées de version.</li>
+                    <li>Serveur mail complet sous FreeBSD (<strong>OpenSMTPD</strong>, <strong>Dovecot</strong>, SPF, DKIM, DMARC).</li>
+                    <li>Serveur de tuiles <strong>OpenStreetMap</strong> (OpenMapTiles, puis <strong>PMTiles</strong>) et de recherche d'adresses (<strong>Addok</strong>).</li>
+                    <li>Maintenance de services auto-hébergés (Nextcloud, PeerTube, etc.).</li>
                   </ul>
                 </div>
               </div>
             </div>
+
             <div class="line">
               <div class="info">
-                <div class="title"><span class="date">2023</span><span class="ecole">Entraînement d'une voix de synthèse avec Piper/VITS</span></div>
+                <div class="title"><span class="date">Depuis 2019</span><span class="ecole"><a href="https://github.com/tjiho/simplestreetmap">Simplestreetmap</a>, interface cartographique libre basée sur OpenStreetMap</span></div>
                 <div class="description">
                   <ul>
-                    <li>Enregistrement et traitement d'un jeu de données vocal.</li>
-                    <li>Entraînement d'un réseau de neurones basé sur VITS.</li>
+                    <li>Front-end web (<strong>MapLibre GL</strong>, Preact) : recherche d'adresses, points d'intérêt, couches vélo, satellite et bâtiments 3D.</li>
+                    <li>Création d'<a href="https://github.com/tjiho/esquisse">Esquisse</a>, bibliothèque JS de couches cartographiques réutilisée par deux front-ends (Preact et Vue/Nuxt).</li>
+                    <li>Amélioration du style de carte de Qwant Maps.</li>
                   </ul>
                 </div>
               </div>
@@ -196,24 +198,34 @@
             </div>
 
             <div class="line">
+              <div class="info">
+                <div class="title"><span class="date">2023</span><span class="ecole">Entraînement d'une voix de synthèse avec Piper/VITS</span></div>
+                <div class="description">
+                  <ul>
+                    <li>Enregistrement et traitement d'un jeu de données vocal.</li>
+                    <li>Entraînement d'un réseau de neurones basé sur VITS.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="line">
                 <div class="info">
-                  <div class="title"><span class="date">2017 – 2018</span><span class="ecole">Vice-trésorier et développeur Air-Eisti</span></div>
+                  <div class="title"><span class="date">2017 – 2018</span><span class="ecole">Vice-trésorier et développeur, Air-Eisti</span>, association informatique de l'EISTI</div>
                   <div class="description">
                     <ul>
-                      <li>Organisation de tournois de jeux vidéo.</li>
-                      <li>Aide à l'installation de Linux.</li>
-                      <li>Projets informatiques tels que la mise en place d'un portail captif et le développement d'un logiciel de gestion de serveurs de jeux.</li>
+                      <li>Portail captif, logiciel de gestion de serveurs de jeux, tournois et install parties Linux.</li>
                     </ul>
                   </div>
                 </div>
-            </div>
+</div>
           </div>
           <div>
             <h2>Formations</h2>
 
             <div class="line">
               <div class="info">
-                <div class="title"><span class="date">2014 – 2019</span><span class="ecole">EISTI, CY Tech</span> - École internationale des sciences du traitement de l'information, Pau</div>
+                <div class="title"><span class="date">2014 – 2019</span><span class="ecole">EISTI</span> (aujourd'hui CY Tech), Pau</div>
                 <div class="description">
                   <ul>
                     <li>Cycle ingénieur, spécialité Ingénierie du Cloud Computing.</li>
@@ -235,16 +247,16 @@
 
             <div class="line">
               <div class="info">
-                <div class="title" style="white-space: nowrap;"><span class="date">2016 – 2017</span><span class="ecole">PAULLA</span> - Pau logiciel libre association, JP Camguillem</div>
+                <div class="title"><span class="date">2016 – 2017</span><span class="ecole">Formation Python</span>, PAULLA (Pau)</div>
                 <div class="description">
                   <ul>
-                    <li>Formation Python.</li>
+                    <li>Avec Jean-Philippe Camguilhem, cofondateur et alors président de l'AFPy.</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <div class="line">
+            <!-- <div class="line">
               <div class="info">
                 <div class="title"><span class="date">2014</span><span class="ecole">Bac S</span> - Mention assez bien, Toulouse</div>
                 <div class="description">
@@ -253,7 +265,7 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!--
             <div class="line">
               <div class="info">
